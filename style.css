@@ -1,26 +1,42 @@
-.animated {
-    background: blue;
-    animation: color-me 5s infinite;
+h1 {
+    border-bottom: 3px solid white;
+    color: black;
+    display: inline-block;
+    font-size: 66px;
+    text-shadow: -3px 3px 0 gold, -6px 6px purple;
+    z-index: 20;
+}
+h1::before {
+    background-color: purple;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-4px) translateY(6px);
+    width: 100%
+}
+h1::after{
+    background-color: white;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-8px) translateY(12px);
+    width: 100%
 }
 
-.equalized1 {
-    margin-top: 250px;
-    height: 5px;
-    background: darkmagenta;
+.container {
+    background-image: linear-gradient(to right bottom, red, blue);
+    height: 100vh;
+    width: 100vw;
+}
+
+#this-canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
-    border-radius: 18px;
-    animation: linedown 3s forwards linear infinite;
-}
-
-
-@keyframes color-me {
-    0% {
-        background: green;
-    }
-    50% {
-        background: crimson;
-    }
-    100% {
-        background: blue;
-    }
 }
