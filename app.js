@@ -7,7 +7,7 @@ let myDirs = {
     x2: "pos",
     y2: "pos"
 }
-let myHue = 180;
+let myHue = 280;
 let myLight = 50;
 let timeoutId;
 let count = 0;
@@ -28,11 +28,12 @@ startUp = () => {
 }
 
 drawing = () => {
-    if (count > 200) {
+    if (count > 100) {
         c.clearRect(0, 0, canvas.width, canvas.height);
         count = 0;
     }
     count ++;
+    console.log(count)
     c.beginPath();
     c.moveTo(myCoords.x1, myCoords.y1);
     c.lineTo(myCoords.x2, myCoords.y2);
@@ -66,4 +67,3 @@ drawing = () => {
 }
 
 startUp();
-window.addEventListener("resize", startUp)
