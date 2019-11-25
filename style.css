@@ -4,9 +4,10 @@ h1 {
     display: inline-block;
     font-size: 66px;
     text-shadow: -3px 3px 0 gold, -6px 6px purple;
-    z-index: 20;
+    z-index: 9;
 }
-h1::before {
+
+/* h1::before {
     background-color: purple;
     content: "";
     display: block;
@@ -16,6 +17,7 @@ h1::before {
     transform: translateX(-4px) translateY(6px);
     width: 100%
 }
+
 h1::after{
     background-color: white;
     content: "";
@@ -25,9 +27,9 @@ h1::after{
     top: 100%;
     transform: translateX(-8px) translateY(12px);
     width: 100%
-}
+} */
 
-.container {
+.wrapper {
     background-image: linear-gradient(to right bottom, red, blue);
     height: 100vh;
     width: 100vw;
