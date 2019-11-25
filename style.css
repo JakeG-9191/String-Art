@@ -1,33 +1,13 @@
 h1 {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid gold;
     color: black;
     display: inline-block;
     font-size: 66px;
-    text-shadow: -3px 3px 0 gold, -6px 6px purple;
-    z-index: 9;
+    text-shadow: -3px 3px 0 gold, -6px 6px orange;
+    z-index: 5;
+    margin-top: 1%;
+    margin-left: 2%;
 }
-
-/* h1::before {
-    background-color: purple;
-    content: "";
-    display: block;
-    height: 4px;
-    position: absolute;
-    top: 100%;
-    transform: translateX(-4px) translateY(6px);
-    width: 100%
-}
-
-h1::after{
-    background-color: white;
-    content: "";
-    display: block;
-    height: 4px;
-    position: absolute;
-    top: 100%;
-    transform: translateX(-8px) translateY(12px);
-    width: 100%
-} */
 
 .wrapper {
     background-image: linear-gradient(to right bottom, red, blue);

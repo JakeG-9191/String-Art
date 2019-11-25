@@ -1,4 +1,4 @@
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("this-canvas");
 const c = canvas.getContext("2d");
 let myCoords;
 let myDirs = {
@@ -12,10 +12,7 @@ let myLight = 50;
 let timeoutId;
 let count = 0;
 
-initialize();
-window.addEventListener("resize", initialize)
-
-initialize = () => {
+startUp = () => {
     clearTimeout(timeoutId);
     canvas.height = canvas.clientHeight;
     canvas.width = canvas.clientWidth;
@@ -31,7 +28,7 @@ initialize = () => {
 }
 
 drawing = () => {
-    if (count > 500) {
+    if (count > 200) {
         c.clearRect(0, 0, canvas.width, canvas.height);
         count = 0;
     }
@@ -67,3 +64,6 @@ drawing = () => {
     })
     timeoutId = setTimeout(() => drawing(), 200);
 }
+
+startUp();
+window.addEventListener("resize", startUp)
