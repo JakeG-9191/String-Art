@@ -1,0 +1,74 @@
+.animated {
+    background: blue;
+    animation: color-me 5s infinite;
+}
+
+.equalized1 {
+    height: -10%;
+    background: darkmagenta;
+    width: 50%;
+    animation: linedown 2s forwards linear infinite;
+}
+
+.equalized2 {
+    vertical-align: 50px;
+    background: darkmagenta;
+    animation: music-step 10s infinite;
+}
+
+.equalized3 {
+    vertical-align: 50px;
+    background: darkmagenta;
+    animation: music-step 7s infinite;
+}
+
+@keyframes lineup {100% {top: -200px; height: 200px}}
+@keyframes linedown {100% {height: -200px}}
+
+/* @keyframes music-step {
+    10% {
+        width: 10%;
+        vertical-align: 100px;
+    }
+    20% {
+        width: 40%;
+        vertical-align: 200px;
+    }
+    30% {
+        width: 30%;
+        vertical-align: 300px;
+    }
+    40% {
+        width: 90%;
+    }
+    50% {
+        width: 20%;
+    }
+    60% {
+        width: 60%;
+    }
+    70% {
+        width: 70%;
+    }
+    80% {
+        width: 10%;
+    }
+    90% {
+        width: 20%;
+    }
+    100% {
+        width: 80%;
+    }
+} */
+
+@keyframes color-me {
+    0% {
+        background: green;
+    }
+    50% {
+        background: crimson;
+    }
+    100% {
+        background: blue;
+    }
+}
